@@ -6,6 +6,8 @@ var newNote =[];
 var array =[];
 var arraySize = 0;
 const mongoose = require('mongoose');
+
+let port = process.env.PORT || 3000;
  
 //on mongodb website connect to clust->mongodb for vscode-> you will be give a url copy paste and replace passcode with yours⁡
 mongoose.connect("mongodb+srv://admin-david:Test123@cluster0.qgp7rgu.mongodb.net/notesdb");
@@ -133,7 +135,7 @@ async function fetchNotes(collection) {
 app.use(express.static("public"));
 app.use(express.urlencoded({extended: true}));
 
-app.listen(3000);
+app.listen(port);
 
 app.post("/submit",(req,res)=>{
     if(req.body["addedNote"]=="delete"){
