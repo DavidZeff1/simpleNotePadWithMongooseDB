@@ -1,4 +1,2 @@
 # simpleNotePadWithMongooseDB
-same as the other notepad repo but can store data using mongoose.
-
-make sure to download all necessary modules (axios,mongoose, etc)
+stores data through the web using MongoDB and can be accessed through the web using render 
