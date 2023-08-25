@@ -7,9 +7,7 @@ var array =[];
 var arraySize = 0;
 const mongoose = require('mongoose');
  
-//Connection to MongoDB database
-//⁡⁢⁣⁣This line will specify the port where we will access our MongoDB Server
-//⁡⁢⁣⁣Here "fruitsDB" is the name of the database where we want to connect to.⁡
+//on mongodb website connect to clust->mongodb for vscode-> you will be give a url copy paste and replace passcode with yours⁡
 mongoose.connect("mongodb+srv://admin-david:Test123@cluster0.qgp7rgu.mongodb.net/notesdb");
 const  notesSchema = {
     name: String,
