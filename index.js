@@ -10,7 +10,7 @@ const mongoose = require('mongoose');
 let port = process.env.PORT || 3000;
  
 //on mongodb website connect to clust->mongodb for vscode-> you will be give a url copy paste and replace passcode with yours⁡
-mongoose.connect("mongodb+srv://admin-david:Test123@cluster0.qgp7rgu.mongodb.net/notesdb");
+mongoose.connect("mongodb://127.0.0.1:27017/myappnotesdb");
 const  notesSchema = {
     name: String,
 }
