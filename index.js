@@ -10,7 +10,7 @@ const mongoose = require('mongoose');
 //Connection to MongoDB database
 //⁡⁢⁣⁣This line will specify the port where we will access our MongoDB Server
 //⁡⁢⁣⁣Here "fruitsDB" is the name of the database where we want to connect to.⁡
-mongoose.connect("mongodb://localhost:27017/notepad");
+mongoose.connect("mongodb+srv://admin-david:Test123@cluster0.qgp7rgu.mongodb.net/notesdb");
 const  notesSchema = {
     name: String,
 }
